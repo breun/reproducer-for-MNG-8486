@@ -7,7 +7,7 @@ I've used [Rancher Desktop](https://rancherdesktop.io) for this reproducer mysel
 
 Compile the code and let Jib build a container image to your local Docker daemon and provide the name via a property on the command line (as shown [here](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#system-properties) in the Jib documentation):
 
-    ❯ mvn compile jib:dockerBuild -Djib.to-image=foo:bar
+    ❯ mvn compile jib:dockerBuild -Djib.to.image=foo:bar
     (...)
     [INFO] Built image to Docker daemon as foo:bar
     (...)
@@ -25,7 +25,7 @@ Feel free to remove it again:
 
 Compile the code and let Jib build a container image to your local Docker daemon and provide the name via a property on the command line (as shown [here](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#system-properties) in the Jib documentation):
 
-    ❯ mvn compile jib:dockerBuild -Djib.to-image=foo:bar
+    ❯ mvn compile jib:dockerBuild -Djib.to.image=foo:bar
     (...)
     [INFO] Built image to Docker daemon as example:1.0.0-SNAPSHOT
     (...)
